@@ -1,47 +1,25 @@
-import React from 'react'
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import {Link} from 'react-router-dom'; 
 import './styles.css';
 
-const Navbar = () => {
+const Navigation = () => {
     return (
-        <ul className="nav nav-tabs">
-        <li className="nav-item">
-          <a
-            href="#home"
-            onClick={() => handlePageChange('Home')}
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-          >
-            Home
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#about"
-            onClick={() => handlePageChange('About')}
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-          >
-            About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#projects"
-            onClick={() => handlePageChange('Projects')}
-            className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
-          >
-            Projects
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#contact"
-            onClick={() => handlePageChange('Contact')}
-            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
+          <>
+            <Navbar collapseOnSelect fixed="top" expand="sm" bg='dark' variant="dark">
+              <Container>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                  <Nav className="me-auto">
+                    <Nav.Link as={Link} to={'/'}>Home</Nav.Link>
+                    <Nav.Link as={Link} to={'/about'}>About</Nav.Link>
+                    <Nav.Link as={Link} to={'/projects'}>Projects</Nav.Link>
+                    <Nav.Link as={Link} to={'/contacts'}>Contact</Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Container>
+            </Navbar>
+          </>
     );
   }
 
-export default Navbar
+export default Navigation

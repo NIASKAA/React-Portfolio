@@ -3,9 +3,11 @@ import './styles.css';
 
 const Footer = () => {
     return (
-        <div className="text-center text-dark p-1">
-            © 2021 Copyright NIASKA Productions
-        </div>
+        <footer>
+            <div className="text-center text-dark p-1">
+                © 2021 Copyright NIASKA Productions
+            </div>
+        </footer>
     )
 }
 

@@ -1,5 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.bgImage{
+  background-image: url("./img/background.jpg");
+  position: relative;
+  margin-bottom: 2rem;
+  padding-top: calc(30rem);
+  padding-bottom: 30rem;
+  background-color: #6c757d;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.bgImage:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #212529;
+  opacity: 0.5;
+}
+
+.mainText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Bangers';
+  font-size: 80px;
+}
 

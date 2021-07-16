@@ -1,0 +1,78 @@
+.aboutImage {
+    background-image: url('../../img/background2.jpg');
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: calc(8rem + 57px);
+    padding-bottom: 30rem;
+    background-color: #6c757d;
+    background-size: cover;
+    background-attachment: scroll;
+    clip-path: url('../../img/background2.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
+    border: black;
+    border-width: 3px;
+}
+
+.aboutImage:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212529;
+    opacity: 0.5;
+}
+
+.introTitle {
+    padding: 20px;
+}
+
+.introContent {
+    width: 38%;
+    text-align: left;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.aboutImage2 {
+    background-image: url('../../img/background3.jpeg');
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: calc(10rem);
+    padding-bottom: 30rem;
+    background-color: #6c757d;
+    background-size: cover;
+    background-attachment: scroll;
+    clip-path: url('../../img/background3.jpeg');
+    clip-path: polygon(0 26%, 100% 0, 100% 75%, 0 100%);
+    border: black;
+    border-width: 3px;
+}
+
+.aboutImage2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #212529;
+  opacity: 0.5;
+}
+
+.aboutSkills {
+    float: right;
+    width: 38%;
+    text-align: right;
+    font-size: 25px;
+    padding: 20px;
+}
+svg {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    right: 30%;
+    bottom: -35%;
+}
+
