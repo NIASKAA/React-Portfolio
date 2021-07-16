@@ -1,11 +1,9 @@
 import './App.css';
-import Navigation from './Components/Navbar/Navbar'
-import About from './Pages/About/About';
-import Home from './Pages/Home/Home'
-import Projects from './Pages/Projects/Project'
-import Contact from './Pages/Contact/Contact'
+import {Navigation, Footer}from './Components'
+import {Home, About, Projects, Contact} from './Pages'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import Footer from './Components/Footer/Footer'
+import {DiscordBot, Amiibo, PlugSelect, Nutricalifide, TechBlog, RamenShop} from './Pages/Projects'
+
 
 function App() {
   return (
@@ -16,9 +14,13 @@ function App() {
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
             <Route exact path='/projects' component={Projects}/>
-              <Projects/>
+            <Route exact path='/projects/discordbot' component={DiscordBot}/>
+            <Route exact path='/projects/nutricalifide' component={Nutricalifide}/>
+            <Route exact path='/projects/ramenshop' component={RamenShop}/>
+            <Route exact path='/projects/plugselect' component={PlugSelect}/>
+            <Route exact path='/projects/techblog' component={TechBlog}/>
+            <Route exact path='/projects/amiibo' component={Amiibo}/>
             <Route exact path="/contact"/>
-              <Contact/>
           </Switch>
         <Footer/>
       </Router>
