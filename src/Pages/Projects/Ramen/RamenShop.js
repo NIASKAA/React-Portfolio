@@ -4,6 +4,9 @@ import Pic1 from '../../../img/rs1.png'
 import Pic2 from '../../../img/rs2.png'
 
 const RamenShop = () => {
+    const redirect = () => {
+        window.location.href="https://github.com/NIASKAA/Ramen-Shop"
+    }
     const imgStyle = {
         width: "80%",
         height: "95%"
@@ -30,7 +33,7 @@ const RamenShop = () => {
                 website containing all the delicious ramen I can offer right? I took a lot of inspiration from all kinds of high-end restaurant's website to kind of mold mine into what it is now.
                 Was rather getting images of ramen as I don't want any copyright issues.
                 </p>
-                <a class="githubBtn" href="https://github.com/NIASKAA/Ramen-Shop"><span>Take a look?</span></a>
+                <button onClick={redirect} class="githubBtn"><span>Take a look?</span></button>
             </article>
             </section>
 

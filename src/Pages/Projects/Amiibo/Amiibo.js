@@ -4,6 +4,9 @@ import Pic1 from '../../../img/amiibo.png'
 import Pic2 from '../../../img/amiibo2.png'
 
 const Amiibo = () => {
+    const redirect = () => {
+        window.location.href = 'https://github.com/NIASKAA/Project-Amiibo'
+    }
     const imgStyle = {
         width: "80%",
         height: '95%'
@@ -30,7 +33,7 @@ const Amiibo = () => {
                     does what it said. Introducing the Amiibo Search Engine, you want to find an amiibo figure? Do it with the web application! It was fun to be able to learn how you can 
                     call data into your website and have that display all kinds of information with just one little key.
                     </p>
-                    <a class="githubBtn" href="https://github.com/NIASKAA/Project-Amiibo"><span>Take a look?</span></a>
+                    <button onClick={redirect} class="githubBtn"><span>Take a look?</span></button>
                 </article>
             </section>
 

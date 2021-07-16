@@ -2,6 +2,9 @@ import React from 'react'
 import './styles.css'
 
 const DiscordBot = () => {
+    const redirect = () => {
+        window.location.href='https://github.com/NIASKAA/Discord-Bot-JS'
+    }
     const imgStyle = {
         width: '20%'
     }
@@ -28,7 +31,7 @@ const DiscordBot = () => {
                             In fact, you can do so much with it. Think of making a bot that does some basic function for you and your friends while you game on a satuday night. That is exactly 
                             how I made mine with minimal yet funny interaction. 
                         </p>
-                    <a class="githubBtn" href="https://github.com/NIASKAA/Discord-Bot-JS" id="githubLink"><span>Take a look?</span></a>
+                    <button onClick={redirect} class="githubBtn" id="githubLink"><span>Take a look?</span></button>
                 </article>
             </section>
 

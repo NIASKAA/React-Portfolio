@@ -4,6 +4,9 @@ import Pic1 from '../../../img/plug1.png'
 import Pic2 from '../../../img/plug2.png'
 
 const PlugSelect = () => {
+    const redirect = () => {
+        window.location.href="https://github.com/NIASKAA/ThePlugSelect"
+    }
     const imgStyle = {
         width: "80%"
     }
@@ -29,7 +32,7 @@ const PlugSelect = () => {
                     luxious items in a fair way. No more just seeing Gucci or LV on the street, how about some other brands across the world? Right now, the website is still in it's early stages but 
                     soon, it will have a lot more application that helps the user navigate the website.
                     </p>
-                    <a class="githubBtn" href="https://github.com/NIASKAA/ThePlugSelect"><span>Take a look?</span></a>
+                    <button onClick={redirect} class="githubBtn"><span>Take a look?</span></button>
                 </article>
             </section>
 

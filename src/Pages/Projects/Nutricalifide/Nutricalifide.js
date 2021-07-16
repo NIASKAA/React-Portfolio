@@ -4,6 +4,9 @@ import Pic1 from '../../../img/nutri1.png'
 import Pic2 from '../../../img/nutri2.png'
 
 const Nutricalifide = () => {
+    const redirect = () => {
+        window.location.href='https://github.com/thomasbolling87/NurtriCalifide'
+    }
     const imgStyle = {
         width: '80%',
         height: '95%'
@@ -31,7 +34,7 @@ const Nutricalifide = () => {
                     so if you want a quick breakfast meal? You got it. We also understand how much it matters to consume the right amount of calories each day so we even made a system to log each meal. At the end 
                     the week it can display just how much you ate that week. Now nutricalifide also understand that some days you need that cheat meal, so again, we added even cheat meals to go along with your routine.
                 </p>
-                <a class="githubBtn" href="https://github.com/thomasbolling87/NurtriCalifide"><span>Take a look?</span></a>
+                <button onClick={redirect}class="githubBtn"><span>Take a look?</span></button>
                 </article>
             </section>
 

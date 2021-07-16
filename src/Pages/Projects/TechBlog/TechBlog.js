@@ -1,9 +1,13 @@
 import React from 'react'
+import {useLocation} from 'react-router-dom'
 import './styles.css'
 import Pic1 from '../../../img/techblog.png'
 import Pic2 from '../../../img/techblog1.png'
 
 const TechBlog = () => {
+    const redirect = () => {
+        window.location.href="https://github.com/NIASKAA/Tech-Blog"
+    }
     const imgStyle = {
         width: "80%",
         height: '95%'
@@ -29,7 +33,7 @@ const TechBlog = () => {
                 So this isn't anything super special but rather something simple. It was a good learning experience for me to understand how a lot of the backend systems work. 
                 Introducing the most basic blog post. Simply make an account and you will be able to post, comment, or even lurk among people who are interested in tech news.
                 </p>
-                <a class="githubBtn" href="https://github.com/NIASKAA/Tech-Blog"><span>Take a look?</span></a>
+                <button onClick={redirect} class="githubBtn"><span>Take a look?</span></button>
             </article>
             </section>
 
