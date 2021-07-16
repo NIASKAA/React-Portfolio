@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import "./styles.css"
 import DiscordBot from '../../img/discordbot.png'
 import Amiibo from '../../img/amiibo.png'
@@ -9,6 +9,25 @@ import PlugSelect from '../../img/newLogo.png'
 import Ramen from'../../img/tonkotsu.jpg'
 
 const Projects = () => {
+    let history = useHistory();
+    const discord = () =>{
+        history.push('/projects/discordbot')
+    }
+    const nutri = () =>{
+        history.push('/projects/nutricalifide')
+    }
+    const ramen = () =>{
+        history.push('/projects/ramenshop')
+    }
+    const plugselect = () =>{
+        history.push('/projects/plugselect')
+    }
+    const blog = () =>{
+        history.push('/projects/techblog')
+    }
+    const amiibo = () =>{
+        history.push('/projects/amiibo')
+    }
     const cardStyle = {
         width: "18rem"
     };
@@ -37,9 +56,8 @@ const Projects = () => {
                         <div class="card" style={cardStyle}>
                             <img src={DiscordBot} class="card-img-top" alt="Discord Bot" style={imgStyle}/>
                             <div class="card-body">
-                                <h5 class="card-title">Discord Bot V2</h5>
-                                
-                                <button as={Link} to={'/projects/discordbot'} class="projectBtn"><span>Take a look?</span></button>
+                                <h5 class="card-title">Discord Bot V3</h5>
+                                <button onClick={discord} id="discord" class="projectBtn"><span>Take a look?</span></button>
                             </div>
                         </div>
                     </div>
@@ -49,7 +67,7 @@ const Projects = () => {
                         <img src={Nutricalifide} class="card-img-top" alt="Nutricalifide" style={imgStyle}/>
                             <div class="card-body">
                                 <h5 class="card-title">Nutricalifide</h5>
-                                <a href="projects/nutricalifide" class="projectBtn"><span>Take a look?</span></a>
+                                <button onClick={nutri} id="nutricalifide" class="projectBtn"><span>Take a look?</span></button>
                             </div>
                         </div>
                     </div>
@@ -59,7 +77,7 @@ const Projects = () => {
                         <img src={PlugSelect} class="card-img-top" alt="PlugSelect" style={imgStyle}/>
                             <div class="card-body">
                                 <h5 class="card-title">The Plug Select</h5>
-                                <a href="projects/thePlugSelect" class="projectBtn"><span>Take a look?</span></a>
+                                <button onClick={plugselect} class="projectBtn"><span>Take a look?</span></button>
                             </div>
                         </div>
                     </div>
@@ -71,7 +89,7 @@ const Projects = () => {
                         <img src={Ramen} class="card-img-top" alt="Ramen Shop" style={imgStyle}/>
                             <div class="card-body">
                                 <h5 class="card-title">Ramen Shop</h5>
-                                <a href="projects/ramenShop" class="projectBtn"><span>Take a look?</span></a>
+                                <button onClick={ramen} class="projectBtn"><span>Take a look?</span></button>
                             </div>
                         </div>
                     </div>
@@ -81,7 +99,7 @@ const Projects = () => {
                         <img src={Amiibo} class="card-img-top" alt="Amiibo" style={imgStyle}/>
                             <div class="card-body">
                                 <h5 class="card-title">Amiibo Search Engine</h5>
-                                <a href="projects/amiiboEngine" class="projectBtn"><span>Take a look?</span></a>
+                                <button onClick={amiibo} class="projectBtn"><span>Take a look?</span></button>
                             </div>
                         </div>
                     </div>
@@ -92,7 +110,7 @@ const Projects = () => {
                         <img src={Blog} class="card-img-top" alt="Tech Blog" style={imgStyle}/>
                             <div class="card-body">
                                 <h5 class="card-title">Your Tech Blog</h5>
-                                <a href="projects/yourTechBlog" class="projectBtn"><span>Take a look?</span></a>
+                                <button onClick={blog} class="projectBtn"><span>Take a look?</span></button>
                             </div>
                         </div>
                     </div> 
