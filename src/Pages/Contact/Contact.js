@@ -1,7 +1,28 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './styles.css'
-import { Form, Button} from 'react-bootstrap';
+import {send} from 'emailjs-com'
+import { Form, Button, Container, Row, Col} from 'react-bootstrap';
 const Contact = () => {
+    const [toSend, setToSend] = useState({
+        fromName: '',
+        replyTo: '',
+        message: ''
+    });
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        send('service_fwnoj3b', 'template_j66lou7', toSend, 'user_7VsQOjvdMWICsgKL3qCvS')
+        .then((response) => {
+            console.log('Success!', response.status, response.text);
+        })
+        .catch((err) => {
+            console.log('Failed', err)
+        })
+    }
+
+    const handleChange = (e) => {
+        setToSend({...toSend, [e.target.name]: e.target.value})
+    }
     return (
         <>
             <header class="projectImage">
@@ -16,32 +37,30 @@ const Contact = () => {
                 </div>
             </header>
 
-            <div class="btnGroup">
-                <ul>
-                <li>
-                    <Button className="btn" href="https://www.linkedin.com/in/alan-man-518156205/">LinkedIn</Button>
-                </li>
-                <li>
-                    <Button className="btn" href="https://github.com/NIASKAA">Github</Button>
-                </li>
-                <li>
-                    <Button className="btn" href="/public/Resume.pdf" download rel="noopener noreferrer" target="_blank">Resume</Button>
-                </li>
-                </ul>
-            </div>
+    
+                <Container>
+                    <Row>
+                        <Col>
+                            <Button className="btn" href="https://www.linkedin.com/in/alan-man-518156205/">LinkedIn</Button>
+                            <Button className="btn" href="https://github.com/NIASKAA">Github</Button>
+                            <Button className="btn" href="/public/Resume.pdf" download rel="noopener noreferrer" target="_blank">Resume</Button>
+                        </Col>
+                    </Row>
+                </Container>
+
             
-            <Form className="contact-form">
+            <Form onSubmit={onSubmit} className="contact-form">
                 <Form.Group className="mb-3 name" controlId="nameInput">
                     <Form.Label className="title">Name</Form.Label>
-                    <Form.Control type="name" placeholder='name...'/>
+                    <Form.Control onChange={handleChange} type="name" name="fromName" value={toSend.fromName} placeholder='name...'/>
                 </Form.Group>
                 <Form.Group className="mb-3 email" controlId="emailInput">
                     <Form.Label className="title">Email address</Form.Label>
-                    <Form.Control type="email" placeholder="example@example.com..." />
+                    <Form.Control onChange={handleChange} type="email"name="replyTo"value={toSend.replyTo} placeholder="example@example.com..." />
                 </Form.Group>
                 <Form.Group className="mb-3 message" controlId="exampleForm.ControlTextarea1">
                     <Form.Label className="title">Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} placeholder="message..."/>
+                    <Form.Control onChange={handleChange} value={toSend.message} name="message" as="textarea" rows={3} placeholder="message..."/>
                 </Form.Group>
                 <Button type="submit" class="btn submitBtn" id="sendIt">Send It</Button>
             </Form>

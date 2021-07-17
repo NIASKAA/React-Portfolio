@@ -24,12 +24,6 @@
     opacity: 0.5;
 }
 
-ul {
-  list-style-type: none;
-  float: left;
-  margin-left: 3%;
-}
-
 .btn {
   background: #0d6efd;
   float: left;
@@ -37,6 +31,7 @@ ul {
   width: 90px;
   cursor: pointer;
   border-radius: 4px;
+  margin: 1%;
 }
 
 .title {
