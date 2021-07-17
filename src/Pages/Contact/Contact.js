@@ -15,32 +15,33 @@ const Contact = () => {
                     </div>
                 </div>
             </header>
+
             <div class="btnGroup">
                 <ul>
                 <li>
-                    <a href="https://www.linkedin.com/in/alan-man-518156205/"><i class="fab fa-linkedin-in"></i></a>
+                    <Button className="btn" href="https://www.linkedin.com/in/alan-man-518156205/">LinkedIn</Button>
                 </li>
                 <li>
-                    <a href="https://github.com/NIASKAA"><i class="fab fa-github"></i></a>
+                    <Button className="btn" href="https://github.com/NIASKAA">Github</Button>
                 </li>
                 <li>
-                    <a href="/public/Resume.pdf" download rel="noopener noreferrer" target="_blank">Resume</a>
+                    <Button className="btn" href="/public/Resume.pdf" download rel="noopener noreferrer" target="_blank">Resume</Button>
                 </li>
                 </ul>
             </div>
             
             <Form className="contact-form">
-                <Form.Group className="mb-3" controlId="nameInput">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control type="name" placeholder='Name...'/>
+                <Form.Group className="mb-3 name" controlId="nameInput">
+                    <Form.Label className="title">Name</Form.Label>
+                    <Form.Control type="name" placeholder='name...'/>
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="emailInput">
-                    <Form.Label>Email address</Form.Label>
+                <Form.Group className="mb-3 email" controlId="emailInput">
+                    <Form.Label className="title">Email address</Form.Label>
                     <Form.Control type="email" placeholder="example@example.com..." />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
+                <Form.Group className="mb-3 message" controlId="exampleForm.ControlTextarea1">
+                    <Form.Label className="title">Message</Form.Label>
+                    <Form.Control as="textarea" rows={3} placeholder="message..."/>
                 </Form.Group>
                 <Button type="submit" class="btn submitBtn" id="sendIt">Send It</Button>
             </Form>
