@@ -24,7 +24,7 @@
     opacity: 0.5;
 }
 
-.card {
+.projectCards{
     margin: 0px 0px 20px 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -36,29 +36,29 @@
 }
 
 .projectBtn{
-  display: block;
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 18px;
+  display: block !important;
+  width: 200px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  font-size: 18px !important;
   font-family: "Bangers";
-  text-decoration: none;
-  color: #333;
-  border: 2px solid #333;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
+  text-decoration: none !important;
+  color: #333 !important;
+  border: 2px solid #333 !important;
+  letter-spacing: 2px !important;
+  text-align: center !important;
+  position: relative !important;
   transition: all .35s;
 }
 
 .projectBtn span{
-  position: relative;
-  z-index: 2;
+  position: relative !important;
+  z-index: 2 !important;
 }
 
 .projectBtn:after{
-  position: absolute;
-  content: "";
+  position: absolute !important;
+  content: "" !important;
   top: 0;
   left: 0;
   width: 0;
@@ -68,11 +68,11 @@
 }
 
 .projectBtn:hover{
-  color: #fff;
+  color: #fff !important;
 }
 
 .projectBtn:hover:after{
-  width: 100%;
+  width: 100% !important;
 }
 
 .proTitle {

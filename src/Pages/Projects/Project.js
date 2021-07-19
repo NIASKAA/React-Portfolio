@@ -1,5 +1,6 @@
 import React from 'react'
 import {useHistory} from 'react-router-dom'
+import {Container, Button, Row, Col, Card} from 'react-bootstrap'
 import "./styles.css"
 import DiscordBot from '../../img/discordbot.png'
 import Amiibo from '../../img/amiibo.png'
@@ -39,7 +40,7 @@ const Projects = () => {
     return (
         <>
             <header className="projectImage">
-                <div className="container position-relative px-4 px-lg-5">
+                <Container className="container position-relative px-4 px-lg-5">
                     <div className="row gx-4 gx-lg-5 justify-content-center">
                         <div className="col-md-10 col-lg-8 col-xl-7">
                             <div className="mainText">
@@ -47,74 +48,74 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Container>
             </header>
 
             <section class="display">
-                <div class="row">
-                    <div class="col">
-                        <div class="card" style={cardStyle}>
-                            <img src={DiscordBot} class="card-img-top" alt="Discord Bot" style={imgStyle}/>
-                            <div class="card-body">
-                                <h5 class="card-title">Discord Bot V3</h5>
-                                <button onClick={discord} id="discord" class="projectBtn"><span>Take a look?</span></button>
-                            </div>
-                        </div>
-                    </div>
+                <Row class="row">
+                    <Col class="col">
+                        <Card className="projectCards" style={cardStyle}>
+                            <Card.Img src={DiscordBot} class="card-img-top" alt="Discord Bot" style={imgStyle}/>
+                            <Card.Body>
+                                <Card.Title>Discord Bot V3</Card.Title>
+                                <Button onClick={discord} id="discord" bsPrefix="projectBtn"><span>Take a look?</span></Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
 
-                    <div class="col">
-                        <div class="card" style={cardStyle}>
-                        <img src={Nutricalifide} class="card-img-top" alt="Nutricalifide" style={imgStyle}/>
-                            <div class="card-body">
-                                <h5 class="card-title">Nutricalifide</h5>
-                                <button onClick={nutri} id="nutricalifide" class="projectBtn"><span>Take a look?</span></button>
-                            </div>
-                        </div>
-                    </div>
+                    <Col class="col">
+                        <Card className="projectCards" style={cardStyle}>
+                        <Card.Img src={Nutricalifide} class="card-img-top" alt="Nutricalifide" style={imgStyle}/>
+                            <Card.Body>
+                                <Card.Title>Nutricalifide</Card.Title>
+                                <Button onClick={nutri} id="nutricalifide" bsPrefix="projectBtn"><span>Take a look?</span></Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
 
-                    <div class="col">
-                        <div class="card" style={cardStyle}>
-                        <img src={PlugSelect} class="card-img-top" alt="PlugSelect" style={imgStyle}/>
-                            <div class="card-body">
-                                <h5 class="card-title">The Plug Select</h5>
-                                <button onClick={plugselect} class="projectBtn"><span>Take a look?</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <Col class="col">
+                        <Card className="projectCards" style={cardStyle}>
+                        <Card.Img src={PlugSelect} class="card-img-top" alt="PlugSelect" style={imgStyle}/>
+                            <Card.Body>
+                                <Card.Title>The Plug Select</Card.Title>
+                                <Button onClick={plugselect} bsPrefix="projectBtn"><span>Take a look?</span></Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
 
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="card" style={cardStyle}>
-                        <img src={Ramen} class="card-img-top" alt="Ramen Shop" style={imgStyle}/>
-                            <div class="card-body">
-                                <h5 class="card-title">Ramen Shop</h5>
-                                <button onClick={ramen} class="projectBtn"><span>Take a look?</span></button>
-                            </div>
-                        </div>
-                    </div>
+                <Row class="row align-items-center">
+                    <Col class="col">
+                        <Card className="projectCards" style={cardStyle}>
+                        <Card.Img src={Ramen} class="card-img-top" alt="Ramen Shop" style={imgStyle}/>
+                            <Card.Body>
+                                <Card.Title>Ramen Shop</Card.Title>
+                                <Button onClick={ramen} bsPrefix="projectBtn"><span>Take a look?</span></Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
 
-                    <div class="col">
-                        <div class="card" style={cardStyle}>
-                        <img src={Amiibo} class="card-img-top" alt="Amiibo" style={imgStyle}/>
-                            <div class="card-body">
-                                <h5 class="card-title">Amiibo Search Engine</h5>
-                                <button onClick={amiibo} class="projectBtn"><span>Take a look?</span></button>
-                            </div>
-                        </div>
-                    </div>
+                    <Col class="col">
+                        <Card className="projectCards" style={cardStyle}>
+                        <Card.Img src={Amiibo} class="card-img-top" alt="Amiibo" style={imgStyle}/>
+                            <Card.Body>
+                                <Card.Title>Amiibo Search Engine</Card.Title>
+                                <Button onClick={amiibo} bsPrefix="projectBtn"><span>Take a look?</span></Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                     
 
-                    <div class="col">
-                        <div class="card" style={cardStyle}>
-                        <img src={Blog} class="card-img-top" alt="Tech Blog" style={imgStyle}/>
-                            <div class="card-body">
-                                <h5 class="card-title">Your Tech Blog</h5>
-                                <button onClick={blog} class="projectBtn"><span>Take a look?</span></button>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
+                    <Col class="col">
+                        <Card className="projectCards" style={cardStyle}>
+                        <Card.Img src={Blog} class="card-img-top" alt="Tech Blog" style={imgStyle}/>
+                            <Card.Body>
+                                <Card.Title>Your Tech Blog</Card.Title>
+                                <Button onClick={blog} bsPrefix="projectBtn"><span>Take a look?</span></Button>
+                            </Card.Body>
+                        </Card>
+                    </Col> 
+                </Row>
             </section>
         </>
     )
