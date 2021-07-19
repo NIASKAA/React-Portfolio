@@ -1,4 +1,5 @@
 import React from 'react'
+import {Button, Row, Col} from 'react-bootstrap'
 import './styles.css'
 
 const DiscordBot = () => {
@@ -31,16 +32,16 @@ const DiscordBot = () => {
                             In fact, you can do so much with it. Think of making a bot that does some basic function for you and your friends while you game on a satuday night. That is exactly 
                             how I made mine with minimal yet funny interaction. 
                         </p>
-                    <button onClick={redirect} class="githubBtn" id="githubLink"><span>Take a look?</span></button>
+                    <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
                 </article>
             </section>
 
             <section class="demoPics text-center">
-            <div class="row">
-                <div class="col">
+            <Row class="row">
+                <Col class="col">
                 <img src="/public/images/discordbot.png" class="rounded" style={imgStyle} alt="discordbot"/>
-                </div>
-            </div>
+                </Col>
+            </Row>
             </section>
         </>
     )

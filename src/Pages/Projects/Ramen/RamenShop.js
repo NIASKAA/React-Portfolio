@@ -1,4 +1,5 @@
 import React from 'react'
+import {Button, Row, Col} from 'react-bootstrap'
 import './styles.css'
 import Pic1 from '../../../img/rs1.png'
 import Pic2 from '../../../img/rs2.png'
@@ -33,19 +34,19 @@ const RamenShop = () => {
                 website containing all the delicious ramen I can offer right? I took a lot of inspiration from all kinds of high-end restaurant's website to kind of mold mine into what it is now.
                 Was rather getting images of ramen as I don't want any copyright issues.
                 </p>
-                <button onClick={redirect} class="githubBtn"><span>Take a look?</span></button>
+                <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
             </article>
             </section>
 
             <section class="demoPics text-center">
-                <div class="row">
-                    <div class="col">
+                <Row class="row">
+                    <Col class="col">
                     <img src={Pic1} class="rounded" style={imgStyle} alt="ramenshop"/>
-                    </div>
-                    <div class="col">
+                    </Col>
+                    <Col class="col">
                     <img src={Pic2} class="rounded" style={imgStyle} alt="ramenshop"/>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
             </section>
         </>
     )

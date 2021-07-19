@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.css'
+import {Button, Row, Col} from 'react-bootstrap'
 import Pic1 from '../../../img/amiibo.png'
 import Pic2 from '../../../img/amiibo2.png'
 
@@ -33,19 +34,19 @@ const Amiibo = () => {
                     does what it said. Introducing the Amiibo Search Engine, you want to find an amiibo figure? Do it with the web application! It was fun to be able to learn how you can 
                     call data into your website and have that display all kinds of information with just one little key.
                     </p>
-                    <button onClick={redirect} class="githubBtn"><span>Take a look?</span></button>
+                    <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
                 </article>
             </section>
 
             <section class="demoPics text-center">
-                <div class="row">
-                    <div class="col">
+                <Row class="row">
+                    <Col class="col">
                     <img src={Pic1} class="rounded" style={imgStyle} alt="amiibo"/>
-                    </div>
-                    <div class="col">
+                    </Col>
+                    <Col class="col">
                     <img src={Pic2} class="rounded" style={imgStyle} alt="amiibo"/>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
             </section>
         </>
     )

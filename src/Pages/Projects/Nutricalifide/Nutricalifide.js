@@ -1,4 +1,5 @@
 import React from 'react'
+import {Button, Row, Col} from 'react-bootstrap'
 import './styles.css'
 import Pic1 from '../../../img/nutri1.png'
 import Pic2 from '../../../img/nutri2.png'
@@ -34,19 +35,19 @@ const Nutricalifide = () => {
                     so if you want a quick breakfast meal? You got it. We also understand how much it matters to consume the right amount of calories each day so we even made a system to log each meal. At the end 
                     the week it can display just how much you ate that week. Now nutricalifide also understand that some days you need that cheat meal, so again, we added even cheat meals to go along with your routine.
                 </p>
-                <button onClick={redirect}class="githubBtn"><span>Take a look?</span></button>
+                <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
                 </article>
             </section>
 
             <section class="demoPics text-center">
-            <div class="row">
-                <div class="col">
+            <Row class="row">
+                <Col class="col">
                 <img src={Pic1} class="rounded" style={imgStyle} alt="nutricalifide"/>
-                </div>
-                <div class="col">
+                </Col>
+                <Col class="col">
                 <img src={Pic2} class="rounded" style={imgStyle} alt="nutricalifide"/>
-                </div>
-            </div>
+                </Col>
+            </Row>
             </section>
         </>
     )

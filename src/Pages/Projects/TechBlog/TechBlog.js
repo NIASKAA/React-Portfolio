@@ -1,5 +1,5 @@
 import React from 'react'
-import {useLocation} from 'react-router-dom'
+import {Button, Row, Col} from 'react-bootstrap'
 import './styles.css'
 import Pic1 from '../../../img/techblog.png'
 import Pic2 from '../../../img/techblog1.png'
@@ -33,19 +33,19 @@ const TechBlog = () => {
                 So this isn't anything super special but rather something simple. It was a good learning experience for me to understand how a lot of the backend systems work. 
                 Introducing the most basic blog post. Simply make an account and you will be able to post, comment, or even lurk among people who are interested in tech news.
                 </p>
-                <button onClick={redirect} class="githubBtn"><span>Take a look?</span></button>
+                <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
             </article>
             </section>
 
             <section class="demoPics text-center">
-            <div class="row">
-                <div class="col">
+            <Row class="row">
+                <Col class="col">
                 <img src={Pic1} class="rounded" style={imgStyle} alt="yourtechblog"/>
-                </div>
-                <div class="col">
+                </Col>
+                <Col class="col">
                 <img src={Pic2} class="rounded" style={imgStyle} alt="yourtechblog"/>
-                </div>
-            </div>
+                </Col>
+            </Row>
             </section>
         </>
     )
