@@ -1,5 +1,15 @@
-.btn {
+.navBtns {
     font-family: "Bangers";
+    font-size: 150%;
+    z-index: 1;
+    text-decoration: none;
     color: white;
-    font-size: 40%;
+}
+
+.navBtns:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#navbarDropdown::after {
+    content: none;  
 }
