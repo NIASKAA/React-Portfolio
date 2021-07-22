@@ -22,7 +22,7 @@ function App() {
             <Route exact path='/projects/amiibo' component={Amiibo}/>
             <Route exact path="/contacts" component={Contact} />
           </Switch>
-        <Footer/>
+        <Footer/> 
       </Router>
     </div>
   );
