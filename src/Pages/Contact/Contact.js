@@ -62,7 +62,7 @@ const Contact = () => {
                     <Form.Label className="title">Message</Form.Label>
                     <Form.Control onChange={handleChange} value={toSend.message} name="message" as="textarea" rows={3} placeholder="message..."/>
                 </Form.Group>
-                <Button type="submit" class="btn submitBtn" id="sendIt">Send It</Button>
+                <Button type="submit" bsPrefix="submitBtn" id="sendIt">Send It</Button>
             </Form>
         </>
     )

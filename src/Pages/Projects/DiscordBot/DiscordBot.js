@@ -1,6 +1,7 @@
 import React from 'react'
 import {Button, Row, Col} from 'react-bootstrap'
 import './styles.css'
+import Pic1 from '../../../img/discord1.png'
 
 const DiscordBot = () => {
     const redirect = () => {
@@ -39,7 +40,7 @@ const DiscordBot = () => {
             <section class="demoPics text-center">
             <Row class="row">
                 <Col class="col">
-                <img src="/public/images/discordbot.png" class="rounded" style={imgStyle} alt="discordbot"/>
+                <img src={Pic1} class="rounded" style={imgStyle} alt="discordbot"/>
                 </Col>
             </Row>
             </section>
