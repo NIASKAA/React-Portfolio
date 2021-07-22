@@ -1,6 +1,6 @@
 # React-Portfolio
 
-New Portfolio converted to react style. Will most likely update over the on-going weeks.
+New Portfolio converted to react style. Will most likely update over the on-going weeks. 
     
 ## Tech Usage
 
