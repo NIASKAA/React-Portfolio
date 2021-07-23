@@ -8,7 +8,7 @@ const DiscordBot = () => {
         window.location.href='https://github.com/NIASKAA/Discord-Bot-JS'
     }
     const imgStyle = {
-        width: '20%'
+        width: '60%'
     }
     return (
         <>
@@ -30,8 +30,9 @@ const DiscordBot = () => {
                         <p class="content">
                             We all play games with our friends right? So it only made sense to do so on Discord, a huge voice communication application made for a community. It
                             was only a matter of time for me to start thinking, how the hell do people make bots? Well, after researching and all I've find that making a bot is fairly easy.
-                            In fact, you can do so much with it. Think of making a bot that does some basic function for you and your friends while you game on a satuday night. That is exactly 
-                            how I made mine with minimal yet funny interaction. 
+                            In fact, you can do so much with it. Think of making a bot that does some basic function for you and your friends while you game on a Saturday night. That is exactly 
+                            how I made mine with minimal yet funny interaction. After awhile, I decided to elevate this bot to a whole new level. I decided to make a rpg game out of it. You heard 
+                            right, a actual game inside Discord. It's got the ability to keep track of how much money you make. You can equip weapons, armor, whatever. Imagine the possibility. 
                         </p>
                     <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
                 </article>
@@ -41,6 +42,9 @@ const DiscordBot = () => {
             <Row class="row">
                 <Col class="col">
                 <img src={Pic1} class="rounded" style={imgStyle} alt="discordbot"/>
+                </Col>
+                <Col class="col">
+                <img src={"https://media.giphy.com/media/vfUv5aYjgujNd1WBmp/giphy.gif"} className="gif" style={imgStyle} alt='discordbot2'/>
                 </Col>
             </Row>
             </section>
