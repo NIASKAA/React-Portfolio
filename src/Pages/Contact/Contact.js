@@ -43,7 +43,7 @@ const Contact = () => {
                         <Col>
                             <Button className="btn" href="https://www.linkedin.com/in/alan-man-518156205/">LinkedIn</Button>
                             <Button className="btn" href="https://github.com/NIASKAA">Github</Button>
-                            <Button className="btn" href='../../../assets/Resume.pdf' download rel="noopener noreferrer" target="_blank">Resume</Button>
+                            <Button className="btn" href='Resume.pdf' download rel="noopener noreferrer" target="_blank">Resume</Button>
                         </Col>
                     </Row>
                 </Container>
