@@ -8,6 +8,10 @@ const Nutricalifide = () => {
     const redirect = () => {
         window.location.href='https://github.com/thomasbolling87/NurtriCalifide'
     }
+
+    const linkTo = () => {
+        window.location.href='https://thomasbolling87.github.io/NurtriCalifide/'
+    }
     const imgStyle = {
         width: '80%',
         height: '95%'
@@ -35,7 +39,15 @@ const Nutricalifide = () => {
                     so if you want a quick breakfast meal? You got it. We also understand how much it matters to consume the right amount of calories each day so we even made a system to log each meal. At the end 
                     the week it can display just how much you ate that week. Now nutricalifide also understand that some days you need that cheat meal, so again, we added even cheat meals to go along with your routine.
                 </p>
-                <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
+                <Row>
+                    <Col>
+                        <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
+                    </Col>
+                    <Col>
+                        <Button onClick={linkTo} bsPrefix="githubBtn"><span>Link to Web</span></Button>
+                    </Col>
+                </Row>
+                
                 </article>
             </section>
 

@@ -8,6 +8,10 @@ const Amiibo = () => {
     const redirect = () => {
         window.location.href = 'https://github.com/NIASKAA/Project-Amiibo'
     }
+
+    const linkTo = () => {
+        window.location.href = 'https://niaskaa.github.io/Project-Amiibo/'
+    }
     const imgStyle = {
         width: "80%",
         height: '95%'
@@ -34,7 +38,14 @@ const Amiibo = () => {
                     does what it said. Introducing the Amiibo Search Engine, you want to find an amiibo figure? Do it with the web application! It was fun to be able to learn how you can 
                     call data into your website and have that display all kinds of information with just one little key.
                     </p>
-                    <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
+                    <Row> 
+                        <Col>
+                            <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
+                        </Col>
+                        <Col>
+                            <Button onClick={linkTo} bsPrefix="githubBtn"><span>Link to Web</span></Button>
+                        </Col>
+                    </Row>
                 </article>
             </section>
 

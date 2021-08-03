@@ -8,6 +8,10 @@ const RamenShop = () => {
     const redirect = () => {
         window.location.href="https://github.com/NIASKAA/Ramen-Shop"
     }
+
+    const linkTo = () => {
+        window.location.href="https://niaskaa.github.io/Ramen-Shop/"
+    }
     const imgStyle = {
         width: "80%",
         height: "95%"
@@ -34,7 +38,14 @@ const RamenShop = () => {
                 website containing all the delicious ramen I can offer right? I took a lot of inspiration from all kinds of high-end restaurant's website to kind of mold mine into what it is now.
                 Was rather getting images of ramen as I don't want any copyright issues.
                 </p>
-                <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
+                <Row>
+                    <Col>
+                        <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
+                    </Col>
+                    <Col>
+                        <Button onClick={linkTo} bsPrefix="githubBtn"><span>Link to Web</span></Button>
+                    </Col>
+                </Row>
             </article>
             </section>
 

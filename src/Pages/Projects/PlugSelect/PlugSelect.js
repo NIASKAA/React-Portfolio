@@ -8,6 +8,10 @@ const PlugSelect = () => {
     const redirect = () => {
         window.location.href="https://github.com/NIASKAA/ThePlugSelect"
     }
+
+     const linkTo = () => {
+        window.location.href="https://plugselect.herokuapp.com/"
+    }
     const imgStyle = {
         width: "80%"
     }
@@ -33,7 +37,14 @@ const PlugSelect = () => {
                     luxious items in a fair way. No more just seeing Gucci or LV on the street, how about some other brands across the world? Right now, the website is still in it's early stages but 
                     soon, it will have a lot more application that helps the user navigate the website.
                     </p>
-                    <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
+                    <Row>
+                        <Col>
+                            <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
+                        </Col>
+                        <Col>
+                            <Button onClick={linkTo} bsPrefix="githubBtn"><span>Link to Web</span></Button>
+                        </Col>
+                    </Row>
                 </article>
             </section>
 
