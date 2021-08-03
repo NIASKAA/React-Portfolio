@@ -41,6 +41,11 @@ const Contact = () => {
                 <Container>
                     <Row>
                         <Col>
+                            <h5 className="contactInfo">Email: mkman751@yahoo.com</h5>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
                             <Button className="btn" href="https://www.linkedin.com/in/alan-man-518156205/">LinkedIn</Button>
                             <Button className="btn" href="https://github.com/NIASKAA">Github</Button>
                             <Button className="btn" href='Resume.pdf' download rel="noopener noreferrer" target="_blank">Resume</Button>
@@ -62,7 +67,7 @@ const Contact = () => {
                     <Form.Label className="title">Message</Form.Label>
                     <Form.Control onChange={handleChange} value={toSend.message} name="message" as="textarea" rows={3} placeholder="message..."/>
                 </Form.Group>
-                <Button type="submit" bsPrefix="submitBtn" id="sendIt">Send It</Button>
+                <Button type="submit" bsPrefix="submitBtn" id="sendIt">Send It!</Button>
             </Form>
         </>
     )

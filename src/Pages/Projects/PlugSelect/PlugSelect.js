@@ -37,6 +37,7 @@ const PlugSelect = () => {
                     luxious items in a fair way. No more just seeing Gucci or LV on the street, how about some other brands across the world? Right now, the website is still in it's early stages but 
                     soon, it will have a lot more application that helps the user navigate the website.
                     </p>
+                    <p class="content">Tech Usage: Handlebars.Js, Bootstrap, MYSQL, Cloudinary, Socket.io</p>
                     <Row>
                         <Col>
                             <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>

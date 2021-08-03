@@ -38,6 +38,7 @@ const TechBlog = () => {
                 So this isn't anything super special but rather something simple. It was a good learning experience for me to understand how a lot of the backend systems work. 
                 Introducing the most basic blog post. Simply make an account and you will be able to post, comment, or even lurk among people who are interested in tech news.
                 </p>
+                <p class="content">Tech Usage: Handlebars.Js, Bootstrap, MYSQL, Javascript</p>
                 <Row>
                     <Col>
                         <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>

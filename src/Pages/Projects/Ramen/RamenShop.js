@@ -38,6 +38,7 @@ const RamenShop = () => {
                 website containing all the delicious ramen I can offer right? I took a lot of inspiration from all kinds of high-end restaurant's website to kind of mold mine into what it is now.
                 Was rather getting images of ramen as I don't want any copyright issues.
                 </p>
+                <p class="content">Tech Usage: Html 5, Bootstrap, Javascript</p>
                 <Row>
                     <Col>
                         <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>

@@ -34,6 +34,7 @@ const DiscordBot = () => {
                             how I made mine with minimal yet funny interaction. After awhile, I decided to elevate this bot to a whole new level. I decided to make a rpg game out of it. You heard 
                             right, a actual game inside Discord. It's got the ability to keep track of how much money you make. You can equip weapons, armor, whatever. Imagine the possibility. 
                         </p>
+                        <p class="content">Tech Usage: Discord.Js, MongoDB, ytdl-core, ES6 Javascript, ffmpeg, dotenv</p>
                     <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
                 </article>
             </section>
