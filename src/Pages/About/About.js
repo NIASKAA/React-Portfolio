@@ -110,10 +110,10 @@ const About = () => {
                     <article className="aboutSkills">
                     <h3 className="skillTitle">Skills</h3>
                     <div className="skillsContent">
-                        I can definitely tell you that my brain works a lot better when I have my daily cup of coffee. 
-                        Whether it is designing a website or screaming at my computer
-                        for the backend to work, I will always deliver a clean, organized 
-                        code for my team. 
+                        I believe that it takes one to understand art to create art. Thus, my ability to create prototype application 
+                        stems from viewing the world at a different angle. The ability to lead my team under my vision or to help someone 
+                        achieve their mindset is what I want to do. With several projects under my belt, I would love to learn and understand 
+                        what everyone's environment is like.
                     </div>
                     </article>
                 </Container>
