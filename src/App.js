@@ -2,7 +2,7 @@ import './App.css';
 import {Navigation, Footer}from './Components'
 import {Home, About, Projects, Contact} from './Pages'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import {DiscordBot, Amiibo, PlugSelect, Nutricalifide, TechBlog, RamenShop} from './Pages/Projects'
+import {DiscordBot, Amiibo, PlugSelect, Nutricalifide, TechBlog, RamenShop, PlugSelectV2} from './Pages/Projects'
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
             <Route exact path='/projects/plugselect' component={PlugSelect}/>
             <Route exact path='/projects/techblog' component={TechBlog}/>
             <Route exact path='/projects/amiibo' component={Amiibo}/>
+            <Route exact path='/projects/amiibo' component={PlugSelectV2}/>
             <Route exact path="/contacts" component={Contact} />
           </Switch>
         <Footer/> 

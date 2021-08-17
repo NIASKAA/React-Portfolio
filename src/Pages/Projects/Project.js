@@ -29,6 +29,9 @@ const Projects = () => {
     const amiibo = () =>{
         history.push('/projects/amiibo')
     }
+    const plugv2 = () =>{
+        history.push('/projects/plugselectv2')
+    }
     const cardStyle = {
         width: "18rem"
     };
@@ -100,7 +103,7 @@ const Projects = () => {
                         <Card.Img src={Amiibo} class="card-img-top" alt="Amiibo" style={imgStyle}/>
                             <Card.Body>
                                 <Card.Title>Amiibo Search Engine</Card.Title>
-                                <Button onClick={amiibo} bsPrefix="projectBtn"><span>Take a look?</span></Button>
+                                <Button onClick={amiibo} bsPrefix="projectBtn"><span>Take a look?</span></Button>   
                             </Card.Body>
                         </Card>
                     </Col>
@@ -115,6 +118,17 @@ const Projects = () => {
                             </Card.Body>
                         </Card>
                     </Col> 
+                </Row>
+                <Row class="row align-items-center">
+                    <Col class="col">
+                        <Card className="projectCards" style={cardStyle}>
+                        <Card.Img src={PlugSelect} class="card-img-top" alt="Ramen Shop" style={imgStyle}/>
+                            <Card.Body>
+                                <Card.Title>Plug Select V2</Card.Title>
+                                <Button onClick={plugv2} bsPrefix="projectBtn"><span>Take a look?</span></Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 </Row>
             </section>
         </>

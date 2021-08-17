@@ -12,6 +12,10 @@ const RamenShop = () => {
     const linkTo = () => {
         window.location.href="https://niaskaa.github.io/Ramen-Shop/"
     }
+
+    const toReact = () => {
+        window.location.href="https://react-ramen.herokuapp.com/"
+    }
     const imgStyle = {
         width: "80%",
         height: "95%"
@@ -45,6 +49,9 @@ const RamenShop = () => {
                     </Col>
                     <Col>
                         <Button onClick={linkTo} bsPrefix="githubBtn"><span>Link to Web</span></Button>
+                    </Col>
+                    <Col>
+                        <Button onClick={toReact} bsPrefix="githubBtn"><span>Link to React Web Version</span></Button>
                     </Col>
                 </Row>
             </article>
