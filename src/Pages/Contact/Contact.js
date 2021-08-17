@@ -46,7 +46,7 @@ const Contact = () => {
                     </Row>
                     <Row>
                         <Col>
-                            <Button className="redirects" href="https://www.linkedin.com/in/alan-man-518156205/">LinkedIn</Button>
+                            <Button className="redirects" href="www.linkedin.com/in/alanNiaska/">LinkedIn</Button>
                             <Button className="redirects" href="https://github.com/NIASKAA">Github</Button>
                             <Button className="redirects" href='Resume.pdf' download rel="noopener noreferrer" target="_blank">Resume</Button>
                         </Col>
