@@ -19,7 +19,7 @@ body {
 }
 
 .bgImage{
-  background-image: url("./img/background.jpg");
+  background-image: url("./Pages/assets/background.jpg");
   position: relative;
   margin-bottom: 2rem;
   padding-top: calc(30rem);

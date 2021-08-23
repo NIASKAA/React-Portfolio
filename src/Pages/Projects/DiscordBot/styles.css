@@ -1,13 +1,12 @@
 .projectImage {
-    background-image: url('../../../img/background4.jpg');
-    position: relative;
+    background-image: url("../../assets/background4.jpg");
     margin-bottom: 3rem;
     padding-top: calc(8rem + 57px);
     padding-bottom: 30rem;
     background-color: #6c757d;
     background-size: cover;
     background-attachment: scroll;
-    clip-path: url('../../../img/background4.jpg');
+    clip-path: url("../../assets/background4.jpg");
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
     border: black;
     border-width: 3px;

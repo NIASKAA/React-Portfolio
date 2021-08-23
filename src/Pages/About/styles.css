@@ -1,5 +1,5 @@
 .aboutImage {
-    background-image: url('../../img/background2.jpg');
+    background-image: url('../assets/background2.jpg');
     position: relative;
     margin-bottom: 3rem;
     padding-top: calc(8rem + 57px);
@@ -7,7 +7,7 @@
     background-color: #6c757d;
     background-size: cover;
     background-attachment: scroll;
-    clip-path: url('../../img/background2.jpg');
+    clip-path: url('../assets/background2.jpg');
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
     border: black;
     border-width: 3px;
@@ -36,7 +36,7 @@
 }
 
 .aboutImage2 {
-    background-image: url('../../img/background3.jpeg');
+    background-image: url('../assets/background3.jpeg');
     position: relative;
     margin-bottom: 3rem;
     padding-top: calc(10rem);
@@ -44,7 +44,7 @@
     background-color: #6c757d;
     background-size: cover;
     background-attachment: scroll;
-    clip-path: url('../../img/background3.jpeg');
+    clip-path: url('../assets/background3.jpeg');
     clip-path: polygon(0 26%, 100% 0, 100% 75%, 0 100%);
     border: black;
     border-width: 3px;
