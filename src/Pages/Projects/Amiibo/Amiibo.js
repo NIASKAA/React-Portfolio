@@ -1,8 +1,6 @@
 import React from 'react'
 import './styles.css'
 import {Button, Row, Col} from 'react-bootstrap'
-import Pic1 from '../../../img/amiibo.png'
-import Pic2 from '../../../img/amiibo2.png'
 
 const Amiibo = () => {
     const redirect = () => {
