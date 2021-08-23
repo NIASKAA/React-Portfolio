@@ -1,8 +1,6 @@
 import React from 'react'
 import {Row, Col, Button} from 'react-bootstrap';
 import './styles.css'
-import Pic1 from '../../../img/plugv2-1.png'
-import Pic2 from '../../../img/plugv2-2.png'
 
 const PlugSelectV2 = () => {
     const redirect = () => {
@@ -52,10 +50,10 @@ const PlugSelectV2 = () => {
             <section class="demoPics text-center">
                 <Row class="row">
                     <Col class="col">
-                    <img src={Pic1} class="rounded" style={imgStyle} alt="theplugselect"/>
+                    <img src="/img/plugv2-1.png" class="rounded" style={imgStyle} alt="theplugselect"/>
                     </Col>
                     <Col class="col">
-                    <img src={Pic2} class="rounded" style={imgStyle} alt="theplugselect"/>
+                    <img src="/img/plugv2-2.png" class="rounded" style={imgStyle} alt="theplugselect"/>
                     </Col>
                 </Row>
             </section>

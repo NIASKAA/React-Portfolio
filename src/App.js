@@ -20,7 +20,7 @@ function App() {
             <Route exact path='/projects/plugselect' component={PlugSelect}/>
             <Route exact path='/projects/techblog' component={TechBlog}/>
             <Route exact path='/projects/amiibo' component={Amiibo}/>
-            <Route exact path='/projects/amiibo' component={PlugSelectV2}/>
+            <Route exact path='/projects/plugselectv2' component={PlugSelectV2}/>
             <Route exact path="/contacts" component={Contact} />
           </Switch>
         <Footer/> 

@@ -1,8 +1,6 @@
 import React from 'react'
 import {Button, Row, Col} from 'react-bootstrap'
 import './styles.css'
-import Pic1 from '../../../img/rs1.png'
-import Pic2 from '../../../img/rs2.png'
 
 const RamenShop = () => {
     const redirect = () => {
@@ -16,9 +14,16 @@ const RamenShop = () => {
     const toReact = () => {
         window.location.href="https://react-ramen.herokuapp.com/"
     }
+
+    const toReactGithub = () => {
+        window.location.href="https://github.com/NIASKAA/react-ramen"
+    }
+    
     const imgStyle = {
         width: "80%",
-        height: "95%"
+        height: "95%",
+        margin: '2%',
+        boxShadow: "1px 1px 1px grey"
     }
     return (
         <>
@@ -43,15 +48,19 @@ const RamenShop = () => {
                 Was rather getting images of ramen as I don't want any copyright issues.
                 </p>
                 <p class="content">Tech Usage: Html 5, Bootstrap, Javascript</p>
+                <p class="content">React Version Tech Usage: React.Js, React-Bootstrap</p>
                 <Row>
                     <Col>
-                        <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
+                        <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look? (Github)</span></Button>
                     </Col>
                     <Col>
                         <Button onClick={linkTo} bsPrefix="githubBtn"><span>Link to Web</span></Button>
                     </Col>
                     <Col>
-                        <Button onClick={toReact} bsPrefix="githubBtn"><span>Link to React Web Version</span></Button>
+                        <Button onClick={toReact} bsPrefix="githubBtn"><span>React Version</span></Button>
+                    </Col>
+                    <Col>
+                        <Button onClick={toReactGithub} bsPrefix="githubBtn"><span>React Version Github</span></Button>
                     </Col>
                 </Row>
             </article>
@@ -60,10 +69,18 @@ const RamenShop = () => {
             <section class="demoPics text-center">
                 <Row class="row">
                     <Col class="col">
-                    <img src={Pic1} class="rounded" style={imgStyle} alt="ramenshop"/>
+                        <img src="/img/rs1.png" class="rounded" style={imgStyle} alt="ramenshop"/>
                     </Col>
                     <Col class="col">
-                    <img src={Pic2} class="rounded" style={imgStyle} alt="ramenshop"/>
+                        <img src="/img/rs2.png" class="rounded" style={imgStyle} alt="ramenshop"/>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <img src="/img/rs2-1.png" class="rounded" style={imgStyle} alt="reactramenshop"/>
+                    </Col>
+                    <Col>
+                        <img src="/img/rs2-2.png" class="rounded" style={imgStyle} alt="reactramenshop"/>
                     </Col>
                 </Row>
             </section>

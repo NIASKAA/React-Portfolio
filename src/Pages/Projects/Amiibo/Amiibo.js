@@ -12,9 +12,20 @@ const Amiibo = () => {
     const linkTo = () => {
         window.location.href = 'https://niaskaa.github.io/Project-Amiibo/'
     }
+
+    const toReact = () => {
+        window.location.href = "https://reactamiibo.herokuapp.com/"
+    }
+
+    const toReactGithub = () => {
+        window.location.href = "https://github.com/NIASKAA/react-amiibo"
+    }
+
     const imgStyle = {
         width: "80%",
-        height: '95%'
+        height: '95%',
+        margin: '2%',
+        boxShadow: "1px 1px 1px grey"
     }
     return (
         <>
@@ -39,12 +50,19 @@ const Amiibo = () => {
                     call data into your website and have that display all kinds of information with just one little key.
                     </p>
                     <p class="content">Tech Usage: Amiibo API, Javascript, Bulma, HTML5</p>
+                    <p class="content">React Version Tech Usage: Amiibo API, React.Js, Material UI, Email.Js</p>
                     <Row> 
                         <Col>
-                            <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
+                            <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look? (Github)</span></Button>
                         </Col>
                         <Col>
                             <Button onClick={linkTo} bsPrefix="githubBtn"><span>Link to Web</span></Button>
+                        </Col>
+                        <Col>
+                            <Button onClick={toReact} bsPrefix="githubBtn"><span>Link to React version</span></Button>
+                        </Col>
+                        <Col>
+                            <Button onClick={toReactGithub} bsPrefix="githubBtn"><span>React version Github</span></Button>
                         </Col>
                     </Row>
                 </article>
@@ -53,10 +71,18 @@ const Amiibo = () => {
             <section class="demoPics text-center">
                 <Row class="row">
                     <Col class="col">
-                    <img src={Pic1} class="rounded" style={imgStyle} alt="amiibo"/>
+                        <img src="/img/amiibo.png" class="rounded" style={imgStyle} alt="amiibo"/>
                     </Col>
                     <Col class="col">
-                    <img src={Pic2} class="rounded" style={imgStyle} alt="amiibo"/>
+                        <img src="/img/amiibo2.png" class="rounded" style={imgStyle} alt="amiibo"/>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <img src="/img/pic3.png" class="rounded" style={imgStyle} alt="reactamiibo" />
+                    </Col>
+                    <Col>
+                        <img src="/img/pic4.png" class="rounded" style={imgStyle} alt="reactamiibo" />
                     </Col>
                 </Row>
             </section>

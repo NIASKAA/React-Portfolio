@@ -1,8 +1,6 @@
 import React from 'react'
 import {Button, Row, Col} from 'react-bootstrap'
 import './styles.css'
-import Pic1 from '../../../img/nutri1.png'
-import Pic2 from '../../../img/nutri2.png'
 
 const Nutricalifide = () => {
     const redirect = () => {
@@ -55,10 +53,10 @@ const Nutricalifide = () => {
             <section class="demoPics text-center">
             <Row class="row">
                 <Col class="col">
-                <img src={Pic1} class="rounded" style={imgStyle} alt="nutricalifide"/>
+                <img src="/img/nutri1.png" class="rounded" style={imgStyle} alt="nutricalifide"/>
                 </Col>
                 <Col class="col">
-                <img src={Pic2} class="rounded" style={imgStyle} alt="nutricalifide"/>
+                <img src="/img/nutri2.png" class="rounded" style={imgStyle} alt="nutricalifide"/>
                 </Col>
             </Row>
             </section>

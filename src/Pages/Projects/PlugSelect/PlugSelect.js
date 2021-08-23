@@ -1,8 +1,6 @@
 import React from 'react'
 import {Button, Row, Col} from 'react-bootstrap'
 import './styles.css'
-import Pic1 from '../../../img/plug1.png'
-import Pic2 from '../../../img/plug2.png'
 
 const PlugSelect = () => {
     const redirect = () => {
@@ -13,7 +11,8 @@ const PlugSelect = () => {
         window.location.href="https://plugselect.herokuapp.com/"
     }
     const imgStyle = {
-        width: "80%"
+        width: "80%",
+        height: '95%'
     }
     return (
         <>
@@ -52,10 +51,10 @@ const PlugSelect = () => {
             <section class="demoPics text-center">
                 <Row class="row">
                     <Col class="col">
-                    <img src={Pic1} class="rounded" style={imgStyle} alt="theplugselect"/>
+                    <img src="/img/plug1.png" class="rounded" style={imgStyle} alt="theplugselect"/>
                     </Col>
                     <Col class="col">
-                    <img src={Pic2} class="rounded" style={imgStyle} alt="theplugselect"/>
+                    <img src="/img/plug2.png" class="rounded" style={imgStyle} alt="theplugselect"/>
                     </Col>
                 </Row>
             </section>

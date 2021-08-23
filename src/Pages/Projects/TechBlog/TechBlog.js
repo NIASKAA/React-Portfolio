@@ -53,10 +53,10 @@ const TechBlog = () => {
             <section class="demoPics text-center">
             <Row class="row">
                 <Col class="col">
-                <img src={Pic1} class="rounded" style={imgStyle} alt="yourtechblog"/>
+                <img src="/img/techblog.png" class="rounded" style={imgStyle} alt="yourtechblog"/>
                 </Col>
                 <Col class="col">
-                <img src={Pic2} class="rounded" style={imgStyle} alt="yourtechblog"/>
+                <img src="/img/techblog1.png" class="rounded" style={imgStyle} alt="yourtechblog"/>
                 </Col>
             </Row>
             </section>
