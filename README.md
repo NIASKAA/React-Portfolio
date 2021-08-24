@@ -4,9 +4,7 @@ New Portfolio converted to react style. Will most likely update over the on-goin
     
 ## Tech Usage
 
-**Client:** Email.Js, React-Bootstrap, React.Js
-
-**Server:** Node, Express
+**Client:** Email.Js, React-Bootstrap, React.Js, AwesomeButton
 
   
 ## Badges
