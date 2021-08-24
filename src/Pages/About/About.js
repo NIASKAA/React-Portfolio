@@ -44,9 +44,12 @@ const About = () => {
                     <h3 className="skillTitle">Skills</h3>
                     <div className="skillsContent">
                         I believe that it takes one to understand art to create art. Thus, my ability to create prototype application 
-                        stems from viewing the world at a different angle. The ability to lead my team under my vision or to help someone 
-                        achieve their mindset is what I want to do. With several projects under my belt, I would love to learn and understand 
-                        what everyone's environment is like. I wish to continue in excelling among my future co-workers to grow as a developer.
+                        stems from viewing the world at a different angle. Honing my skills everyday with projects which require to give a more intuitive user experience in my websites. Ability to leverage between different languages (HTML5, Javascript, React.Js) with different frameworks. (CSS, Bootstrap, Bulma, React-Bootstrap and Material UI)  
+                        Currently learning to apply meaningful server-side applications with known knowledge of MongoDB, MySql, and Node.Js. 
+                        With several successful projects among my colleagues,  I learned to lead, provide quick and appropriate solutions, 
+                        and effectively communicate among team members to reach the deadline among each project where they reached their initial stage of planning. 
+                        Looking to bring my technical skills to help and adapt to create a better foundation to a company and become an important asset to the community.
+
                     </div>
                     </article>
             </section>
