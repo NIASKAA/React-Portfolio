@@ -16,7 +16,6 @@ Add badges from somewhere like:
   
 ## Deployment
 
-Link to github: https://github.com/NIASKAA/ \
 Link to heroku: https://niaskareactportfolio.herokuapp.com/
 
   
