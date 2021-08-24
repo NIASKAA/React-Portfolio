@@ -4,9 +4,7 @@ New Portfolio converted to react style. Will most likely update over the on-goin
     
 ## Tech Usage
 
-**Client:** Email.Js, React-Bootstrap, React.Js
-
-**Server:** Node, Express
+**Client:** Email.Js, React-Bootstrap, React.Js, AwesomeButton
 
   
 ## Badges
@@ -18,7 +16,6 @@ Add badges from somewhere like:
   
 ## Deployment
 
-Link to github: https://github.com/NIASKAA/ \
 Link to heroku: https://niaskareactportfolio.herokuapp.com/
 
   
