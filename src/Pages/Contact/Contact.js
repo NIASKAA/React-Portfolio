@@ -49,10 +49,10 @@ const Contact = () => {
                     </Row>
                     <Row>
                         <Col>
-                            <AwesomeButtonSocial size="medium" type='github' href="https://github.com/NIASKAA">
+                            <AwesomeButtonSocial size="medium" type='github' href="https://github.com/NIASKAA" icon={true}>
                                 Github
                             </AwesomeButtonSocial>
-                            <AwesomeButtonSocial size="medium" type='linkedin' href="www.linkedin.com/in/alanNiaska/">
+                            <AwesomeButtonSocial size="medium" type='linkedin' href="www.linkedin.com/in/alanNiaska/" icon={true}>
                                 LinkedIn
                             </AwesomeButtonSocial>
                             <AwesomeButton size="medium" href='Resume.pdf' download rel="noopener noreferrer" target="_blank">Resume</AwesomeButton>
