@@ -1,7 +1,10 @@
 import React, {useState} from 'react'
 import './styles.css'
 import {send} from 'emailjs-com'
-import { Form, Button, Container, Row, Col} from 'react-bootstrap';
+import { Form, Container, Row, Col} from 'react-bootstrap';
+import {AwesomeButton, AwesomeButtonProgress, AwesomeButtonSocial} from 'react-awesome-button';
+import "react-awesome-button/dist/styles.css";
+
 const Contact = () => {
     const [toSend, setToSend] = useState({
         fromName: '',
@@ -9,7 +12,7 @@ const Contact = () => {
         message: ''
     });
 
-    const onSubmit = (e) => {
+    const next = (e) => {
         e.preventDefault();
         send('service_fwnoj3b', 'template_j66lou7', toSend, 'user_7VsQOjvdMWICsgKL3qCvS')
         .then((response) => {
@@ -46,15 +49,19 @@ const Contact = () => {
                     </Row>
                     <Row>
                         <Col>
-                            <Button className="redirects" href="www.linkedin.com/in/alanNiaska/">LinkedIn</Button>
-                            <Button className="redirects" href="https://github.com/NIASKAA">Github</Button>
-                            <Button className="redirects" href='Resume.pdf' download rel="noopener noreferrer" target="_blank">Resume</Button>
+                            <AwesomeButtonSocial size="medium" type='github' href="https://github.com/NIASKAA">
+                                Github
+                            </AwesomeButtonSocial>
+                            <AwesomeButtonSocial size="medium" type='linkedin' href="www.linkedin.com/in/alanNiaska/">
+                                LinkedIn
+                            </AwesomeButtonSocial>
+                            <AwesomeButton size="medium" href='Resume.pdf' download rel="noopener noreferrer" target="_blank">Resume</AwesomeButton>
                         </Col>
                     </Row>
                 </Container>
 
             
-            <Form onSubmit={onSubmit} className="contact-form">
+            <Form onSubmit={next} className="contact-form">
                 <Form.Group className="mb-3 name" controlId="nameInput">
                     <Form.Label className="title">Name</Form.Label>
                     <Form.Control onChange={handleChange} type="name" name="fromName" value={toSend.fromName} placeholder='name...'/>
@@ -67,7 +74,18 @@ const Contact = () => {
                     <Form.Label className="title">Message</Form.Label>
                     <Form.Control onChange={handleChange} value={toSend.message} name="message" as="textarea" rows={3} placeholder="message..."/>
                 </Form.Group>
-                <Button type="submit" variant="primary" className="sendIt">Send It!</Button>
+                <AwesomeButtonProgress
+                    size='medium'
+                    type='primary'
+                    disabled={!(toSend.fromName && toSend.replyTo && toSend.message)}
+                    action={(element, next) => {
+                        setTimeout(() => {
+                            next()
+                          }, 300);
+                    }}
+                >
+                    Send it!
+                </AwesomeButtonProgress>
             </Form>
         </>
     )
