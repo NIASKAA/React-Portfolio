@@ -8,9 +8,6 @@ New Portfolio converted to react style. Will most likely update over the on-goin
 
   
 ## Badges
-
-Add badges from somewhere like: 
-
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
   

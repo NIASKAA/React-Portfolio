@@ -26,6 +26,11 @@ const Projects = () => {
     const plugv2 = () =>{
         history.push('/projects/plugselectv2')
     }
+
+    const premium = () => {
+        history.push('/projects/premiumbandai')
+    }
+
     const cardStyle = {
         width: "18rem"
     };
@@ -62,10 +67,10 @@ const Projects = () => {
 
                     <Col class="col">
                         <Card className="projectCards" style={cardStyle}>
-                        <Card.Img src="/img/logo.jpeg" class="card-img-top" alt="Nutricalifide" style={imgStyle}/>
+                        <Card.Img src="/img/gunpla.png" class="card-img-top" alt="Premium-Bandai Gunpla Finder" style={imgStyle}/>
                             <Card.Body>
-                                <Card.Title>Nutricalifide</Card.Title>
-                                <Button onClick={nutri} id="nutricalifide" bsPrefix="projectBtn"><span>Take a look?</span></Button>
+                                <Card.Title>Premium Gunpla Finder</Card.Title>
+                                <Button onClick={premium} id="nutricalifide" bsPrefix="projectBtn"><span>Take a look?</span></Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -94,10 +99,10 @@ const Projects = () => {
 
                     <Col class="col">
                         <Card className="projectCards" style={cardStyle}>
-                        <Card.Img src="/img/tonkotsu.jpg" class="card-img-top" alt="Ramen Shop" style={imgStyle}/>
+                        <Card.Img src="/img/logo.jpeg" class="card-img-top" alt="Nutricalifide" style={imgStyle}/>
                             <Card.Body>
-                                <Card.Title>Ramen Shop</Card.Title>
-                                <Button onClick={ramen} bsPrefix="projectBtn"><span>Take a look?</span></Button>
+                                <Card.Title>Nutricalifide</Card.Title>
+                                <Button onClick={nutri} id="nutricalifide" bsPrefix="projectBtn"><span>Take a look?</span></Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -122,6 +127,26 @@ const Projects = () => {
                             </Card.Body>
                         </Card>
                     </Col> 
+
+                    <Col class="col">
+                        <Card className="projectCards" style={cardStyle}>
+                        <Card.Img src="/img/tonkotsu.jpg" class="card-img-top" alt="Ramen Shop" style={imgStyle}/>
+                            <Card.Body>
+                                <Card.Title>Ramen Shop</Card.Title>
+                                <Button onClick={ramen} bsPrefix="projectBtn"><span>Take a look?</span></Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
+                    <Col class="col">
+                        <Card className="projectCards" style={cardStyle}>
+                        <Card.Img src="/img/gunpla.png" class="card-img-top" alt="Gunpla Finder Mobile" style={imgStyle}/>
+                            <Card.Body>
+                                <Card.Title>Gunpla Finder Mobile</Card.Title>
+                                <Button onClick={""} bsPrefix="projectBtn"><span>Work in Progress</span></Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 </Row>
             </section>
         </>
