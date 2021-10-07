@@ -8,7 +8,7 @@ const PremiumNative = () => {
     }
 
     const imgStyle = {
-        width: "100%"
+        width: "80%"
     }
 
     return (
@@ -32,7 +32,10 @@ const PremiumNative = () => {
                         Now this idea of converting my web application came solely cause of wanting to make it more mobile for users who
                         just don't like using the web that much. 
                     </p>
-                    <p class="content">Tech Usage: React.Js, React-Native, MongoDb, Graphql, Apollo Server Express, jwt Token, mongoose, bcrypt</p>
+                    <p class="content">
+                        Tech Usage: React.Js, React-Native, MongoDb, Graphql, Apollo Server Express, jwt Token, mongoose, bcrypt
+                        Native-Base, React-Native-email, React-Native Fast Image, React-Native Async Storage, Redux
+                    </p>
                     <Row>
                         <Col>
                             <Button onClick={redirect} bsPrefix="githubBtn"><span>Take a look?</span></Button>
