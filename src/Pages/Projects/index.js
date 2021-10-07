@@ -6,3 +6,4 @@ export {default as RamenShop} from './Ramen/RamenShop';
 export {default as TechBlog} from './TechBlog/TechBlog';
 export {default as PlugSelectV2} from './PlugSelectV2/PlugSelectV2'
 export {default as PremiumBandai} from './PremiumBandai/PremiumBandai'
+export {default as PremiumNative} from './PremiumNative/PremiumNative'

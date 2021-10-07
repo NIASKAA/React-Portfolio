@@ -2,7 +2,7 @@ import './App.css';
 import {Navigation, Footer}from './Components'
 import {Home, About, Projects, Contact} from './Pages'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import {DiscordBot, Amiibo, PlugSelect, Nutricalifide, TechBlog, RamenShop, PlugSelectV2, PremiumBandai} from './Pages/Projects'
+import {DiscordBot, Amiibo, PlugSelect, Nutricalifide, TechBlog, RamenShop, PlugSelectV2, PremiumBandai, PremiumNative} from './Pages/Projects'
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
             <Route exact path='/projects/amiibo' component={Amiibo}/>
             <Route exact path='/projects/plugselectv2' component={PlugSelectV2}/>
             <Route exact path='/projects/premiumbandai' component={PremiumBandai}/>
+            <Route exact path="/projects/premiumnative" component={PremiumNative}/>
             <Route exact path="/contacts" component={Contact} />
           </Switch>
         <Footer/> 

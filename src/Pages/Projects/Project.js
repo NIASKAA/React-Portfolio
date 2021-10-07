@@ -31,6 +31,10 @@ const Projects = () => {
         history.push('/projects/premiumbandai')
     }
 
+    const native = () => {
+        history.push('/projects/premiumnative')
+    }
+
     const cardStyle = {
         width: "18rem"
     };
@@ -109,10 +113,10 @@ const Projects = () => {
 
                     <Col class="col">
                         <Card className="projectCards" style={cardStyle}>
-                        <Card.Img src="/img/amiibo.png" class="card-img-top" alt="Amiibo" style={imgStyle}/>
+                        <Card.Img src="/img/gunpla.png" class="card-img-top" alt="Gunpla Finder Mobile" style={imgStyle}/>
                             <Card.Body>
-                                <Card.Title>Amiibo Search Engine</Card.Title>
-                                <Button onClick={amiibo} bsPrefix="projectBtn"><span>Take a look?</span></Button>   
+                                <Card.Title>Gunpla Finder Mobile</Card.Title>
+                                <Button onClick={native} bsPrefix="projectBtn"><span>Quick Peak?</span></Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -140,10 +144,10 @@ const Projects = () => {
 
                     <Col class="col">
                         <Card className="projectCards" style={cardStyle}>
-                        <Card.Img src="/img/gunpla.png" class="card-img-top" alt="Gunpla Finder Mobile" style={imgStyle}/>
+                        <Card.Img src="/img/amiibo.png" class="card-img-top" alt="Amiibo" style={imgStyle}/>
                             <Card.Body>
-                                <Card.Title>Gunpla Finder Mobile</Card.Title>
-                                <Button onClick={""} bsPrefix="projectBtn"><span>Work in Progress</span></Button>
+                                <Card.Title>Amiibo Search Engine</Card.Title>
+                                <Button onClick={amiibo} bsPrefix="projectBtn"><span>Take a look?</span></Button>   
                             </Card.Body>
                         </Card>
                     </Col>
