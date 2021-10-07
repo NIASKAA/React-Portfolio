@@ -8,7 +8,7 @@ const PremiumNative = () => {
     }
 
     const imgStyle = {
-        width: "80%"
+        width: "100%"
     }
 
     return (
@@ -44,10 +44,10 @@ const PremiumNative = () => {
             <section class="demoPics text-center">
                 <Row class="row">
                     <Col class="col">
-                    <img src="/img/native1.png" class="rounded" style={imgStyle} alt="premiumnative"/>
+                        <img src="/img/native1.png" class="rounded" style={imgStyle} alt="premiumnative"/>
                     </Col>
                     <Col class="col">
-                    <img src="/img/native2.png" class="rounded" style={imgStyle} alt="premiumnative"/>
+                        <img src="/img/native2.png" class="rounded" style={imgStyle} alt="premiumnative"/>
                     </Col>
                 </Row>
             </section>
