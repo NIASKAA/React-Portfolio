@@ -18,7 +18,10 @@ const PremiumNative = () => {
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-md-10 col-lg-8 col-xl-7">
                             <div class="mainText">
-                                <h1>Premium-Bandai Gunpla Finder (Mobile Version)</h1>
+                                <h1>Premium-Bandai Gunpla Finder 
+                                    <br/>
+                                    (Mobile Version)
+                                </h1>
                             </div>
                         </div>
                     </div>
@@ -32,9 +35,12 @@ const PremiumNative = () => {
                         Now this idea of converting my web application came solely cause of wanting to make it more mobile for users who
                         just don't like using the web that much. 
                     </p>
-                    <p class="content">
-                        Tech Usage: React.Js, React-Native, MongoDb, Graphql, Apollo Server Express, jwt Token, mongoose, bcrypt
-                        Native-Base, React-Native-email, React-Native Fast Image, React-Native Async Storage, Redux
+                    <p class="usage">
+                        Front-End Usage: React.Js, React-Native, GraphQL, jwt decode, JWT, React-Native Async Storage Native-Base, React-Native-email, React-Native Fast Image, Redux
+                    </p>
+                    <br/>
+                    <p class="usage">
+                        Back-End Usage: MongoDB, mongoose, bcrypt, GraphQL, dotenv, Apollo-Server Express, JWT
                     </p>
                     <Row>
                         <Col>
