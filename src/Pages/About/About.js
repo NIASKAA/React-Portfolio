@@ -3,6 +3,12 @@ import {Container, Row, Col, Image} from 'react-bootstrap'
 import "./styles.css"
 
 const About = () => {
+
+    const imgStyle = {
+        width: "30%",
+        float: 'right'
+    }
+
     return (
         <>
             <header className="aboutImage">
@@ -19,16 +25,23 @@ const About = () => {
 
             <section className="aboutInfo">
                 <Container className="aboutContainer">
-                    <article class="aboutIntro">
-                        <h3 class="introTitle">Quick Infos</h3>
-                            <div class="introContent">
-                                I'm Alan also go by NIASKA. Currently a full-stack developer that recently graduated from Rice University Bootcamp. My passion for coding goes back to my roots of creating art but in a form of a model.
-                                I've been building Gunpla all my life and my love to create detailed things is why I'm able to make my piece in this world. My mission is to create applications that
-                                serves the user with an engaging experience with refreshing designs. When I'm not coding, you will definitely 
-                                find me building Gunpla or work on my car. Hope you enjoy my work!
-                            </div>
-                    </article>
-                    <Image src="/img/me.jpg"/>
+                    <Col>
+                        <Row>
+                            <article class="aboutIntro">
+                                <h3 class="introTitle">Quick Infos</h3>
+                                    <div class="introContent">
+                                        I'm Alan also go by NIASKA. Currently a full-stack developer that recently graduated from Rice University Bootcamp. My passion for coding goes back to my roots of creating art but in a form of a model.
+                                        I've been building Gunpla all my life and my love to create detailed things is why I'm able to make my piece in this world. My mission is to create applications that
+                                        serves the user with an engaging experience with refreshing designs. When I'm not coding, you will definitely 
+                                        find me building Gunpla or work on my car. Hope you enjoy my work!
+                                    </div>
+                                    <Image className="myImage" src="/img/me.jpg" style={imgStyle}/>
+
+                            </article>
+                        </Row>
+                        
+                    </Col>
+                    
                 </Container>
             </section>
 
