@@ -26,6 +26,8 @@
 
 .myImage {
     border-radius: 50%;
+    border-color: black;
+    border-width: 8%;
 }
 
 .introTitle {
