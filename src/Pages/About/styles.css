@@ -24,6 +24,10 @@
     opacity: 0.5;
 }
 
+.myImage {
+    border-radius: 50%;
+}
+
 .introTitle {
     padding: 20px;
 }

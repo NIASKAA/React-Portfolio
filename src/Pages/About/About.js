@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col, Image} from 'react-bootstrap'
 import "./styles.css"
 
 const About = () => {
@@ -28,6 +28,7 @@ const About = () => {
                                 find me building Gunpla or work on my car. Hope you enjoy my work!
                             </div>
                     </article>
+                    <Image src="/img/me.jpg"/>
                 </Container>
             </section>
 
