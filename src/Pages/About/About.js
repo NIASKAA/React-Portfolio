@@ -5,8 +5,8 @@ import "./styles.css"
 const About = () => {
 
     const imgStyle = {
-        width: "30%",
-        float: 'right'
+        width: "20%",
+        float: 'right',
     }
 
     return (
@@ -29,18 +29,17 @@ const About = () => {
                         <Row>
                             <article class="aboutIntro">
                                 <h3 class="introTitle">Quick Infos</h3>
+                                    <Image className="myImage" src="/img/me.jpg" style={imgStyle}/>
                                     <div class="introContent">
                                         I'm Alan also go by NIASKA. Currently a full-stack developer that recently graduated from Rice University Bootcamp. My passion for coding goes back to my roots of creating art but in a form of a model.
                                         I've been building Gunpla all my life and my love to create detailed things is why I'm able to make my piece in this world. My mission is to create applications that
                                         serves the user with an engaging experience with refreshing designs. When I'm not coding, you will definitely 
                                         find me building Gunpla or work on my car. Hope you enjoy my work!
                                     </div>
-                                    <Image className="myImage" src="/img/me.jpg" style={imgStyle}/>
-
                             </article>
                         </Row>
-                        
                     </Col>
+                    
                     
                 </Container>
             </section>
