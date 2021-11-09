@@ -155,13 +155,12 @@ const Projects = () => {
 
                 <Row class="row align-items-center">
                     <Col class="col">
-                        <Card>
-                        <Card.Img>
+                        <Card className="projectCards" style={cardStyle}>
+                        <Card.Img src="/img/progress.jpeg" class="card-img-top" alt="progress" style={imgStyle}/>
                             <Card.Body>
                                 <Card.Title>Gundam API</Card.Title>
                                 <Button bsPrefix="projectBtn"><span>Work In Progress~</span></Button>
                             </Card.Body>
-                        </Card.Img>
                         </Card>
                     </Col>
                 </Row>
