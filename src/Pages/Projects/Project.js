@@ -152,6 +152,19 @@ const Projects = () => {
                         </Card>
                     </Col>
                 </Row>
+
+                <Row class="row align-items-center">
+                    <Col class="col">
+                        <Card>
+                        <Card.Img>
+                            <Card.Body>
+                                <Card.Title>Gundam API</Card.Title>
+                                <Button bsPrefix="projectBtn"><span>Work In Progress~</span></Button>
+                            </Card.Body>
+                        </Card.Img>
+                        </Card>
+                    </Col>
+                </Row>
             </section>
         </>
     )
