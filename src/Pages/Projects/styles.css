@@ -82,3 +82,39 @@
 .content {
   margin: 20px;
 }
+
+@media only screen and (max-width: 560px) {
+  .projectImage {
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .projectCards {
+    margin-left: 24%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .projectImage {
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .projectImage{
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@media only screen and (max-width: 1560px) {
+  .projectImage{
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+  }
+}
