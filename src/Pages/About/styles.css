@@ -77,3 +77,34 @@
 }
 
 
+@media only screen and (max-width: 560px) {
+    .aboutImage, .aboutImage2 {
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .aboutImage2 .aboutImage{
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .aboutImage .aboutImage2{
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  
+@media only screen and (max-width: 1560px) {
+    .aboutImage .aboutImage2{
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+}
