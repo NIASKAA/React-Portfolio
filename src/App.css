@@ -21,9 +21,8 @@ body {
 .bgImage{
   background-image: url("./Pages/assets/background.jpg");
   position: relative;
-  margin-bottom: 2rem;
   padding-top: calc(30rem);
-  padding-bottom: 30rem;
+  padding-bottom: 42rem;
   background-color: #6c757d;
   background-size: cover;
   background-attachment: scroll;
