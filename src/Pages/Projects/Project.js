@@ -163,6 +163,16 @@ const Projects = () => {
                             </Card.Body>
                         </Card>
                     </Col>
+
+                    <Col class="col">
+                        <Card className="projectCards" style={cardStyle}>
+                        <Card.Img src="/img/progress.jpeg" class="card-img-top" alt="progress" style={imgStyle}/>
+                            <Card.Body>
+                                <Card.Title>Husbando List</Card.Title>
+                                <Button bsPrefix="projectBtn"><span>Work In Progress~</span></Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 </Row>
             </section>
         </>
