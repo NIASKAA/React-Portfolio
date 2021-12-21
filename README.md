@@ -13,7 +13,7 @@ New Portfolio converted to react style. Will most likely update over the on-goin
   
 ## Deployment
 
-Link to heroku: https://niaskareactportfolio.herokuapp.com/
+Link to heroku: https://niaskaportfolio.herokuapp.com/
 
   
   
